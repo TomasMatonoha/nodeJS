@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mam rad kotatka</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <header class="bg-dark text-center p-3">
+        <h1 class="display-2 text-white">Hudební vkus</h1>
+    </header>
+    <main class="container">
+        <h2 class="bg-secondary text-center p-3 mt-3 rounded">Formulář pro zadání své oblíbené hudby</h2>
+        <div class="container">
+            <form action="/data" method="post">
+                <div class="form-group row">
+                    <label for="kapela" class="col-sm-3 col-form-label bg-light rounded">Oblíbené hudební těleso</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="kapela" id="kapela" placeholder="Napište jméno svého oblíbeného hudebního tělesa">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="skladba" class="col-sm-3 col-form-label bg-light rounded">Oblíbená skladba</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="skladba" id="skladba" placeholder="Napište jméno své oblíbené skladby">
+                    </div>
+                </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-3 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Odeslat údaje</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
